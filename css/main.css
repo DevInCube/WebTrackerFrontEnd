@@ -1,0 +1,49 @@
+html,body { height:100%; }
+
+table
+{
+	width: 100%;
+}
+.main-layout
+{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+div.top-table
+{
+	width: 100%;
+	margin: 0px;
+}
+
+tr.top
+{
+	height: 64px;
+	border-bottom: 4px solid steelblue;
+}
+
+.left-navi
+{
+	margin-left: 15px;
+	float: left;
+	width: 256px;
+	background: #ccddff;
+	border-right: 1px solid lightgray;
+	display: inline-block;
+}
+
+.body-row
+{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	background: #fafafa;
+}
+
+.body
+{
+	overflow: hidden;
+	margin-right:15px;
+}

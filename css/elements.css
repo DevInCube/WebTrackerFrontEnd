@@ -1,0 +1,162 @@
+
+.com-logo
+{
+	/*background: yellow;*/
+	opacity: 0.9;
+	font-weight: bold;
+	font-size: 30px;
+	color: lightsteelblue;
+	width: 300px;
+	height: 100%;
+	text-align: left;
+	vertical-align: middle;
+	line-height: 40px;
+	position: relative;
+	padding-left: 15px;
+	padding-top: 5px;
+	margin: 0px;
+}
+
+ul
+{
+	padding: 0px;
+}
+
+.records
+{
+	list-style: none;
+	margin-top: 10px;
+}
+
+ul.services
+{
+	list-style: none;
+}
+
+ul.services > li > .header
+{
+	width: 100%;
+	line-height: 40px;
+	background: lightsteelblue;
+	border-bottom: 2px solid steelblue;
+}
+ul.services > li > .header:hover
+{
+	cursor: hand; 
+	cursor: pointer;
+}
+ul.services > li > .header > a 
+{
+	font-weight: bold;
+	padding-left: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+ul.services > li > div > .nav > li > a
+{
+	padding-left: 40px;
+}
+
+.body > .header
+{
+	background: transparent;
+	color: steelblue;
+	line-height: 42px;
+	padding-top: 10px;
+	font-size: 28px;
+	padding-left: 25px;
+	width: 100%;
+}
+
+.body > .content
+{
+	margin: 10px;
+}
+
+.body > .content > .card
+{
+	background: white;
+	padding: 10px;
+	border-top: 4px solid lightsteelblue;
+	margin-bottom: 10px;
+}
+
+.body > .content >  .left-pad
+{
+	padding-left: 30px;
+}
+
+.add-record
+{
+	line-height: 46px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	background: seagreen;
+	color: white;
+}
+
+.add-record > h4 
+{
+	margin:0px;
+}
+
+.add-record:hover
+{
+	cursor:hand; cursor:pointer;
+	background: mediumseagreen;
+}
+
+input[type=checkbox]
+{
+	-webkit-transform: scale(1.5,1.5);
+	-moz-transform: scale(1.5,1.5);
+	-o-transform: scale(1.5,1.5);
+}
+
+tr.header
+{
+	background: #eef;	
+}
+
+tr.header > .text
+{
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 5px;
+}
+
+td:nth-child(1)
+{
+	width: 50px;
+}
+
+td:nth-child(1) > input[type=checkbox],
+th:nth-child(1) > input[type=checkbox],
+td:nth-child(1) > div
+{
+font-size:24px;
+	margin-left: 5px;
+}
+
+.records > thead>tr>th
+{
+   background: #ddf;
+}
+
+.records > tbody> tr.closed
+{
+	background: #ddd;
+}
+
+.records > tbody> tr  > td:nth-child(2)
+{
+	width: 20%;
+}
+
+.records > tbody> tr  > td:nth-child(3)
+{
+	width: 20%;
+}

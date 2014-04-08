@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/elements.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+   
+   
+	<table class='top-table'>
+		<tbody>
+			<tr class='top'>
+				<td>
+					<div class='com-logo'>
+						ComLogo
+					</div>
+				</td>
+				<td> 
+					<div class="media">
+					  <a class="pull-left" href="#">
+						<img class="media-object" src="images/no-ava.jpg" width='50px' height='50px' >
+					  </a>
+					  <div class="media-body">
+						<h4 class="media-heading">Ruslan Hadyniak</h4>
+						last seen yesterday
+					  </div>
+					</div>				</td>
+				<td>  </td>
+				<td>  </td>
+			</tr>
+		</tbody>
+	</table>
+	<div class='main-layout'>
+			<div class='body-row'>
+				<div class='left-navi'> 
+					
+					
+					<ul class='services'>
+					
+						<li>
+							<div class='header' data-toggle="collapse" data-target="#demo">
+							<a id="toggler1" >
+								<i class="icon-folder-open"></i>
+								<i class="icon-folder-close"></i>
+								Personal workspace
+							</a>
+							</div>
+
+							<div id="demo" class="collapse in">
+								<ul class="nav nav-list">
+								  <li><a href="#">Time tracking</a></li>
+								  <li><a href="#">Funds tracker</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class='header' data-toggle="collapse" data-target="#demo2">
+							<a id="toggler2" >
+								<i class="icon-folder-open"></i>
+								<i class="icon-folder-close"></i>
+								Other services
+							</a>
+							</div>
+
+							<div id="demo2" class="collapse in">
+								<ul class="nav nav-list">
+								  <li><a href="#">Service3</a></li>
+								  <li><a href="#">Service4</a></li>
+								  <li><a href="#">Service5</a></li>
+								  <li><a href="#">Service6</a></li>
+								</ul>
+							</div>
+						</li>
+					
+					</ul>
+					
+				</div>
+				<div class='body'> 
+					<div class='header'>Time tracker service</div>
+					<div class='content'>
+						
+						<div class='card'>
+							<button type="button" class="btn btn-success">
+							  Approve  <span class="glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-danger">
+							  Remove  <span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</div>
+					
+						
+						<div class='card left-pad'>
+										
+						<form class="form-inline" role="form">
+								 <div class="form-group">
+									<button type="button" class="btn btn-default">
+									  Date  <span class="glyphicon glyphicon-chevron-up"></span>
+									</button>
+									</div>
+									 <div class="form-group">
+									<input type='text' class="form-control" placeholder="Search"/>
+									</div>
+							</form>
+									
+						<table class='table table-condensed records'>
+							<thead>
+								<tr>
+									<th><input type='checkbox' disabled='true'/></th>
+									<th>Client</th>
+									<th>Project</th>
+									<th>Description</th>
+								</tr>
+							<thead>
+							<tbody>
+								<tr>
+									<td><div><span class='glyphicon glyphicon-dashboard'></span></div></td>
+									<td><input type='text' class="form-control" placeholder="Client"/></td>
+									<td><input type='text' class="form-control" placeholder="Project"/></td>
+									<td>
+										<input type='text' class="form-control" placeholder="Description"/>
+									</td>
+										<!--<button class='btn btn-success'>Add</button>
+										<button class='btn '>Cancel</button>
+										<button type="button" class="btn btn-default">
+												  15.03.2014  <span class="glyphicon glyphicon-chevron-up"></span>
+												</button>
+										-->
+								</tr>
+								<tr class='header'>
+									<td><input type='checkbox'/></td>
+									<td colspan='3' class='text' >15.05.2014</td>
+								</tr>
+								<tr>
+									<td><input type='checkbox'/></td>
+									<td>prsdsdd1</td>
+									<td>tisda sdsme1</td>
+									<td>descsd asdsadasd asdwdawd </td>
+								</tr>
+								<tr class='closed'>
+									<td><input type='checkbox'/></td>
+									<td>prsdda1</td>
+									<td>tisadasd me1</td>
+									<td>descsdas dsa asd asd as ds</td>
+								</tr>
+								<tr class='header'>
+									<td><input type='checkbox'/></td>
+									<td colspan='3' class='text' >17.05.2014</td>
+								</tr>
+								<tr class='closed'>
+									<td><input type='checkbox'/></td>
+									<td>prwqe1</td>
+									<td>timsadas aae1</td>
+									<td>desasdasddadadsa asd asdas das dsd c</td>
+								</tr>
+								<tr class='closed'>
+									<td><input type='checkbox'/></td>
+									<td>prqw1</td>
+									<td>tasd sdime1</td>
+									<td>descsd asdasd asdasdasd sa</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
