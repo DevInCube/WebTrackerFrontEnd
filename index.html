@@ -40,8 +40,116 @@
 						last seen yesterday
 					  </div>
 					</div>				</td>
-				<td>  </td>
-				<td>  </td>
+			    <td>  
+					
+				</td>
+				<td>  
+				<div class="btn-group timers">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="badge">5</span> Timers <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+					<li>
+						<div class='timer-card'>
+							
+							<div class="btn-toolbar" role="toolbar">
+							
+							<div class="btn-group">
+							  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
+								<button class='btn btn-default timer-time'>999:59:59</button>
+								<a class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></a>
+							</div>
+							<div class="btn-group">
+							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
+							</div>
+							<div class="btn-group">
+								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
+							</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='timer-card'>
+							
+							<div class="btn-toolbar" role="toolbar">
+							
+							<div class="btn-group">
+							  <button class='btn btn-success'><span class="glyphicon glyphicon-pause"></span></button>
+								<button class='btn btn-success timer-time'>999:59:59</button>
+								<button class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></button>
+							</div>
+							<div class="btn-group">
+							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
+							</div>
+							<div class="btn-group">
+								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
+							</div>
+							</div>
+						</div>
+					</li>					
+					<li>
+						<div class='timer-card'>
+							
+							<div class="btn-toolbar" role="toolbar">
+							
+							<div class="btn-group">
+							  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
+								<button class='btn  btn-default timer-time'>999:59:59</button>
+								<button class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></button>
+							</div>
+							<div class="btn-group">
+							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
+							</div>
+							<div class="btn-group">
+								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
+							</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='timer-card'>
+							
+							<div class="btn-toolbar" role="toolbar">
+							
+							<div class="btn-group">
+							  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
+								<button class='btn btn-default timer-time'>999:59:59</button>
+								<a class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></a>
+							</div>
+							<div class="btn-group">
+							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
+							</div>
+							<div class="btn-group">
+								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
+							</div>
+							</div>
+						</div>
+					</li>
+					
+				  </ul>
+				    <div class='timer-card'>
+						
+						<div class="btn-toolbar" role="toolbar">						
+						<div class="btn-group">
+						  <button class='btn btn-success'><span class="glyphicon glyphicon-pause"></span></button>
+							<button class='btn btn-success timer-time'>999:59:59</button>
+							<button class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></button>
+						</div>
+						<div class="btn-group">
+						<a class='timer-desc' id="desc1"
+							data-container="body" data-toggle="popover" data-placement="bottom" 
+							data-content="Description goes here. It might be very long but we know how to cut it"
+						>
+							Description goes here. It might be very long but we know how to cut it
+						</a>
+						</div>
+						<div class="btn-group">
+							<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
+						</div>
+						</div>
+					</div>
+				</div>
+				</td>
 			</tr>
 		</tbody>
 	</table>
@@ -185,5 +293,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script>
+		$('#desc1').popover({trigger:'hover'});
+	</script>
   </body>
 </html>

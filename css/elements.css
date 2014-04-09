@@ -160,3 +160,38 @@ font-size:24px;
 {
 	width: 20%;
 }
+
+.timers
+{
+ padding-top: 13px;
+}
+
+.timer-card
+{
+	height: 42px;
+	width: 400px;
+	display: inline-block;
+	overflow: hidden;
+	padding-left: 4px;
+	margin: 0px;
+}
+
+.timer-desc
+{
+	overflow: hidden;
+	white-space: nowrap;
+	width: 150px;
+	display: inline-block;
+	line-height: 35px;
+	padding-left: 5px;
+}
+
+.timer-time
+{
+	height: 34px;
+	padding: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	font-size: 20px;
+}
