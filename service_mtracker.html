@@ -37,118 +37,14 @@
 					  </a>
 					  <div class="media-body">
 						<h4 class="media-heading">Ruslan Hadyniak</h4>
-						last seen yesterday
+						<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cog"></span> Settings</button>
 					  </div>
 					</div>				</td>
 			    <td>  
 					
 				</td>
 				<td>  
-				<div class="btn-group timers">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-					<span class="badge">5</span> Timers <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu">
-					<li>
-						<div class='timer-card'>
-							
-							<div class="btn-toolbar" role="toolbar">
-							
-							<div class="btn-group">
-							  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
-								<button class='btn btn-default timer-time'>999:59:59</button>
-								<a class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></a>
-							</div>
-							<div class="btn-group">
-							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
-							</div>
-							<div class="btn-group">
-								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
-							</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class='timer-card'>
-							
-							<div class="btn-toolbar" role="toolbar">
-							
-							<div class="btn-group">
-							  <button class='btn btn-success'><span class="glyphicon glyphicon-pause"></span></button>
-								<button class='btn btn-success timer-time'>999:59:59</button>
-								<button class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></button>
-							</div>
-							<div class="btn-group">
-							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
-							</div>
-							<div class="btn-group">
-								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
-							</div>
-							</div>
-						</div>
-					</li>					
-					<li>
-						<div class='timer-card'>
-							
-							<div class="btn-toolbar" role="toolbar">
-							
-							<div class="btn-group">
-							  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
-								<button class='btn  btn-default timer-time'>999:59:59</button>
-								<button class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></button>
-							</div>
-							<div class="btn-group">
-							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
-							</div>
-							<div class="btn-group">
-								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
-							</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class='timer-card'>
-							
-							<div class="btn-toolbar" role="toolbar">
-							
-							<div class="btn-group">
-							  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
-								<button class='btn btn-default timer-time'>999:59:59</button>
-								<a class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></a>
-							</div>
-							<div class="btn-group">
-							<a class='timer-desc'>Description goes here. It might be very long but we know how to cut it</a>
-							</div>
-							<div class="btn-group">
-								<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
-							</div>
-							</div>
-						</div>
-					</li>
 					
-				  </ul>
-				    <div class='timer-card'>
-						
-						<div class="btn-toolbar" role="toolbar">						
-						<div class="btn-group">
-						  <button class='btn btn-success'><span class="glyphicon glyphicon-pause"></span></button>
-							<button class='btn btn-success timer-time'>999:59:59</button>
-							<button class='btn btn-default'><span class="glyphicon glyphicon-ok"></span></button>
-						</div>
-						<div class="btn-group">
-						<a class='timer-desc' id="desc1"
-							data-container="body" data-toggle="popover" data-placement="bottom" 
-							data-content="Description goes here. It might be very long but we know how to cut it"
-						>
-							Description goes here. It might be very long but we know how to cut it
-						</a>
-						</div>
-						<div class="btn-group">
-							<a class='btn btn-remove'><span class="glyphicon glyphicon-remove"></span></a>
-						</div>
-						</div>
-					</div>
-				</div>
 				</td>
 			</tr>
 		</tbody>
@@ -167,39 +63,38 @@
 								<i class="icon-folder-close"></i>
 								Personal workspace
 							</a>
+							<span class="badge pull-right notify-badge">10</span>
 							</div>
 
 							<div id="demo" class="collapse in">
 								<ul class="nav nav-list">
-								  <li><a href="#">Time tracking</a></li>
-								  <li><a href="#">Funds tracker</a></li>
+								  <li><a href="service_ttracker.html">Time tracking</a></li>
+								  <li><a href="service_mtracker.html">Expenses tracker<span class="badge pull-right">10</span></a></li>
 								</ul>
 							</div>
 						</li>
 						<li>
 							<div class='header' data-toggle="collapse" data-target="#demo2">
-							<a id="toggler2" >
+							<a id="toggler2">
 								<i class="icon-folder-open"></i>
 								<i class="icon-folder-close"></i>
 								Other services
 							</a>
+							<span class="badge pull-right notify-badge">5</span>
 							</div>
-
 							<div id="demo2" class="collapse in">
 								<ul class="nav nav-list">
-								  <li><a href="#">Service3</a></li>
-								  <li><a href="#">Service4</a></li>
+								  <li><a href="service_calendar.html">Calendar</a></li>
+								  <li><a href="#">Service4<span class="badge pull-right">2</span></a></li>
 								  <li><a href="#">Service5</a></li>
-								  <li><a href="#">Service6</a></li>
+								  <li><a href="#">Service6<span class="badge pull-right">3</span></a></li>
 								</ul>
 							</div>
 						</li>
-					
 					</ul>
-					
 				</div>
 				<div class='body'> 
-					<div class='header'>Time tracker service</div>
+					<div class='header'>Expenses tracker</div>
 					<div class='content'>
 						
 						<div class='card'>

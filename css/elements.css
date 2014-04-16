@@ -53,10 +53,23 @@ ul.services > li > .header > a
 	text-decoration: none;
 }
 
+ul.services > li > div > .nav > li
+{
+	background: #eef;
+}
+
+
 ul.services > li > div > .nav > li > a
 {
 	padding-left: 40px;
+	color: black;
 }
+
+ul.services > li > div > .nav > li > a:hover
+{
+	background: lightskyblue;
+}
+
 
 .body > .header
 {
@@ -195,3 +208,16 @@ font-size:24px;
 	
 	font-size: 20px;
 }
+
+.notify-badge
+{
+	margin-top: 12px;
+	margin-right: 15px;
+}
+
+.calendar img
+{
+	width: 300px;
+}
+
+.wide { width: 100%; }
