@@ -27,6 +27,11 @@ ul
 	list-style: none;
 	margin-top: 10px;
 }
+.records > tbody > tr:hover{
+	background-color: lightskyblue;
+	cursor:hand; cursor:pointer;
+}
+
 
 ul.services
 {
@@ -52,6 +57,7 @@ ul.services > li > .header > a
 	color: white;
 	text-decoration: none;
 }
+
 
 ul.services > li > div > .nav > li
 {
@@ -221,3 +227,25 @@ font-size:24px;
 }
 
 .wide { width: 100%; }
+
+
+.logo-placeholder
+{
+	width: 256px;
+	height: 64px;
+	border: 2px solid lightsteelblue;
+	background-color: #eef;
+}
+
+.logo-placeholder > button
+{
+	position:relative;
+	margin-top: -20px;
+	margin-left: -50px;	
+    top:50%; 
+    left:50%;
+}
+
+.modal-dialog{
+	width: 800px;
+}

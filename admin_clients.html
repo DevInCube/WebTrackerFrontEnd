@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/elements.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+   
+   
+	<table class='top-table'>
+		<tbody>
+			<tr class='top'>
+				<td>
+					<div class='com-logo'>
+						ComLogo
+					</div>
+				</td>
+				<td> 
+					<div class="media">
+					  <a class="pull-left" href="#">
+						<img class="media-object" src="images/no-ava.jpg" width='50px' height='50px' >
+					  </a>
+					  <div class="media-body">
+						<h4 class="media-heading">Ruslan Hadyniak</h4>
+						<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cog"></span> Settings</button>
+					  </div>
+					</div>				</td>
+			    <td>  
+					
+				</td>
+				<td>  
+				
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class='main-layout'>
+			<div class='body-row'>
+				<div class='left-navi'> 
+					
+					
+					<ul class='services'>
+						<li>
+							<div class='header' data-toggle="collapse" data-target="#demo">
+							<a id="toggler1" >
+								<i class="icon-folder-open"></i>
+								<i class="icon-folder-close"></i>
+								Administration services
+							</a>
+							</div>
+
+							<div id="demo" class="collapse in">
+								<ul class="nav nav-list">
+								  <li><a href="admin_clients.html">Clients</a></li>
+								  <li><a href="admin_projects.html">Projects</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class='header' data-toggle="collapse" data-target="#demo">
+							<a id="toggler1" >
+								<i class="icon-folder-open"></i>
+								<i class="icon-folder-close"></i>
+								Personal workspace
+							</a>
+							<span class="badge pull-right notify-badge">10</span>
+							</div>
+
+							<div id="demo" class="collapse in">
+								<ul class="nav nav-list">
+								  <li><a href="service_ttracker.html">Time tracking</a></li>
+								  <li><a href="service_mtracker.html">Expenses tracker<span class="badge pull-right">10</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class='header' data-toggle="collapse" data-target="#demo2">
+							<a id="toggler2">
+								<i class="icon-folder-open"></i>
+								<i class="icon-folder-close"></i>
+								Other services
+							</a>
+							<span class="badge pull-right notify-badge">5</span>
+							</div>
+							<div id="demo2" class="collapse in">
+								<ul class="nav nav-list">
+								  <li><a href="service_calendar.html">Calendar</a></li>
+								  <li><a href="#">Service4<span class="badge pull-right">2</span></a></li>
+								  <li><a href="#">Service5</a></li>
+								  <li><a href="#">Service6<span class="badge pull-right">3</span></a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class='body'> 
+					<div class='header'>Clients</div>
+					<div class='content'>
+						
+						<div class='card'>
+							<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demonew">
+							   <span class="glyphicon glyphicon-plus"></span> Add
+							</button>
+							<button type="button" class="btn btn-default">
+							  <span class="glyphicon glyphicon-remove"></span> Remove  
+							</button>
+						</div>
+
+						<div class='card left-pad collapse' id='demonew'>
+							<form class="form-horizontal" role="form">
+							  <div class="form-group">
+							    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+							    <div class="col-sm-4">
+							      <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+							    </div>
+							  </div>							  
+							  <div class="form-group">
+							    <label for="inputEmail3" class="col-sm-2 control-label">Description</label>
+							    <div class="col-sm-4">
+							      <textarea type="email" class="form-control" id="inputEmail3" placeholder="Desc"></textarea>
+							    </div>
+							  </div>	
+							   <div class="form-group">
+							    <label for="inputEmail3" class="col-sm-2 control-label">Logo</label>
+							    <div class="col-sm-4">
+							    	<h5> Text logo </h5>
+							    	<input type="email" class="form-control" id="inputEmail3" placeholder="Logo text">
+							    	<h5> or image logo </h5>
+							    	<div class='logo-placeholder'>
+							      		<button class='btn btn-default'>Load image</button> 
+							  		</div>
+							    </div>
+							  </div>							  
+							  
+							  <div class="form-group">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <button type="submit" class="btn btn-primary">Create</button>
+							      <button type="submit" class="btn btn-link">Cancel</button>
+							    </div>
+							  </div>
+							</form>
+						</div>
+					
+						
+						<div class='card left-pad'>
+								
+							<form class="form-inline" role="form">
+								 <div class="form-group">
+									<button type="button" class="btn btn-default">
+									  Name  <span class="glyphicon glyphicon-chevron-up"></span>
+									</button>
+									</div>
+									 <div class="form-group">
+									<input type='text' class="form-control" placeholder="Search"/>
+									</div>
+							</form>
+						
+						<table class='table table-condensed records'>
+							<thead>
+								<tr>
+									<th><input type='checkbox' disabled='true'/></th>
+									<th>Name</th>
+									<th>Registration date</th>
+									<th></th>
+								</tr>
+							<thead>
+							<tbody>
+								
+									
+									
+								<tr>
+								</tr>
+								<tr class='header'>
+									<td><input type='checkbox'/></td>
+									<td colspan='3' class='text' >A</td>
+								</tr>
+								<tr data-toggle="modal" data-target="#myModal">
+									<td><input type='checkbox'/></td>
+									<td>Aravira company</td>
+									<td>15.02.12</td>
+									<td></td>
+								</tr>								
+								<tr data-toggle="modal" data-target="#myModal">
+									<td><input type='checkbox'/></td>
+									<td>Acon</td>
+									<td>15.06.11</td>
+									<td></td>
+								</tr> 
+								<tr class='header'>
+									<td><input type='checkbox'/></td>
+									<td colspan='3' class='text' >C</td>
+								</tr>
+								<tr data-toggle="modal" data-target="#myModal">
+									<td><input type='checkbox'/></td>
+									<td>Coca Cola</td>
+									<td>31.03.14</td>
+									<td></td>
+								</tr>
+								<tr data-toggle="modal" data-target="#myModal">
+									<td><input type='checkbox'/></td>
+									<td>Cucumber sales</td>
+									<td>31.03.14</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+
+						
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		$('#desc1').popover({trigger:'hover'});
+	
+	</script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close modal-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Client data</h4>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-default">
+			  <!-- Default panel contents -->
+			  <div class="panel-heading">
+			  	<span>Client name</span>
+			  	<button class='btn btn-default pull-right btn-xs'><span class="glyphicon glyphicon-pencil"></span> Edit client</button>
+			  </div>
+			  <div class="panel-body">
+			    <p>Some description about this client.</p>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur, diam a commodo hendrerit, quam nibh luctus massa, et varius est ligula vitae nisl. Donec pretium leo at convallis bibendum. Curabitur et posuere tellus, ac lobortis turpis. Praesent at metus venenatis, lobortis est et, sagittis augue. Cras euismod elit eu venenatis vulputate. Integer hendrerit tristique sollicitudin. Praesent et ornare nulla. Morbi libero urna, condimentum tristique semper in, lacinia ac nulla. Proin vestibulum euismod accumsan. Donec imperdiet leo eu ligula venenatis, non porttitor lorem imperdiet. Cras quis est quis mauris eleifend scelerisque. Quisque gravida ultricies est, vel dignissim neque feugiat ac. Curabitur vel dui vitae metus malesuada hendrerit ut eget lacus.</p>
+			  </div>
+
+			  <!-- List group -->
+			  <ul class="list-group">
+			    <li class="list-group-item">
+			    	<button class='btn btn-success'>
+			    		<span class='glyphicon glyphicon-plus'></span> Create new</button>
+			    	<button class='btn btn-default'>
+			    		<span class='glyphicon glyphicon-folder-open'></span>&nbsp;&nbsp;Projects <span class="badge">14</span>
+			    	</button>
+			    	
+			    </li>
+			    <li class="list-group-item">
+			    	<button class='btn btn-success'>
+			    		<span class='glyphicon glyphicon-plus'></span> Add</button>
+			    	<button class='btn btn-default'>
+			    		<span class='glyphicon glyphicon-user'></span>&nbsp;Employees <span class="badge">52</span>
+			    	</button>
+			    </li>
+			  </ul>
+			  <div class="panel-footer"></div>
+			</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
