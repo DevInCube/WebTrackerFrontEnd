@@ -22,11 +22,17 @@ ul
 	padding: 0px;
 }
 
+
+
 .records
 {
 	list-style: none;
 	margin-top: 10px;
 }
+
+.records > tbody > tr:nth-child(even) {background: #fff}
+.records > tbody > tr:nth-child(odd) {background: #eee}
+
 .records > tbody > tr:hover{
 	background-color: lightskyblue;
 	cursor:hand; cursor:pointer;
@@ -127,14 +133,14 @@ ul.services > li > div > .nav > li > a:hover
 	cursor:hand; cursor:pointer;
 	background: mediumseagreen;
 }
-
+/*
 input[type=checkbox]
 {
 	-webkit-transform: scale(1.5,1.5);
 	-moz-transform: scale(1.5,1.5);
 	-o-transform: scale(1.5,1.5);
 }
-
+*/
 tr.header
 {
 	background: #eef;	
@@ -179,6 +185,9 @@ font-size:24px;
 {
 	width: 20%;
 }
+
+.records > thead> tr  > th > a:hover
+{ cursor:hand; cursor:pointer;}
 
 .timers
 {
@@ -249,3 +258,17 @@ font-size:24px;
 .modal-dialog{
 	width: 800px;
 }
+
+.clients > tbody> tr  > td:nth-child(2)
+{
+	width: 50%;
+}
+
+.clients > tbody> tr  > td:nth-child(3)
+{
+	width: 20%;
+}
+
+.projects > tbody> tr  > td:nth-child(2){width: 40%;}
+
+.projects > tbody> tr  > td:nth-child(3){width: 30%;}

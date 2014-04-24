@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Projects</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-select.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/elements.css" rel="stylesheet">
 
@@ -109,7 +110,7 @@
 					</ul>
 				</div>
 				<div class='body'> 
-					<div class='header'>Clients</div>
+					<div class='header'>Projects</div>
 					<div class='content'>
 						
 						<div class='card'>
@@ -123,6 +124,19 @@
 
 						<div class='card left-pad collapse' id='demonew'>
 							<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">Client</label>
+							    <div class="col-sm-4">
+									<select class="selectpicker" >
+									  <option value="cheese">Cheese</option>
+									  <option value="tomatoes">Tomatoes</option>
+									  <option value="mozarella">Mozzarella</option>
+									  <option value="mushrooms">Mushrooms</option>
+									  <option value="pepperoni">Pepperoni</option>
+									  <option value="onions">Onions</option>
+									</select>
+								</div>
+							 </div>
 							  <div class="form-group">
 							    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
 							    <div class="col-sm-4">
@@ -136,14 +150,15 @@
 							    </div>
 							  </div>	
 							   <div class="form-group">
-							    <label for="inputEmail3" class="col-sm-2 control-label">Logo</label>
+							    <label for="inputEmail3" class="col-sm-2 control-label">Employees</label>
 							    <div class="col-sm-4">
-							    	<h5> Text logo </h5>
-							    	<input type="email" class="form-control" id="inputEmail3" placeholder="Logo text">
-							    	<h5> or image logo </h5>
-							    	<div class='logo-placeholder'>
-							      		<button class='btn btn-default'>Load image</button> 
-							  		</div>
+									<button class='btn btn-success'>+ Add</button> 
+									<button class='btn btn-default'>- Remove</button>
+							    	<ul class='employees' style='list-style:none'>
+										<li> <input type='checkbox'>Ruslan Had</input></li>
+										<li> <input type='checkbox'>Dmytriy Kom</input> </li>
+										<li> <input type='checkbox'>Zaila Boo</input> </li>
+									</ul>
 							    </div>
 							  </div>							  
 							  
@@ -155,14 +170,12 @@
 							  </div>
 							</form>
 						</div>
-					
 						
 						<div class='card left-pad'>
-								
 							<form class="form-inline" role="form">
 								 <div class="form-group">
 									<button type="button" class="btn btn-default">
-									  Name  <span class="glyphicon glyphicon-chevron-up"></span>
+									  Project  <span class="glyphicon glyphicon-chevron-up"></span>
 									</button>
 									</div>
 									 <div class="form-group">
@@ -170,87 +183,97 @@
 									</div>
 							</form>
 						
-						<table class='table table-condensed records clients'>
+						<table class='table table-condensed records projects'>
 							<thead>
 								<tr>
 									<th><input type='checkbox' disabled='true'/></th>
-									<th><a>Name</a></th>
+									<th><a>Project</a></th>
+									<th><a>Client</a></th>
 									<th><a>Registration date</a></th>
 									<th></th>
 								</tr>
 							<thead>
 							<tbody>
-								
-									
-									
 								<tr>
 								</tr>
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Aravira company</a></td>
+									<td>Company 1</td>
 									<td>15.02.12</td>
 									<td></td>
 								</tr>								
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Acon</a></td>
+									<td>Company 1</td>
 									<td>15.06.11</td>
 									<td></td>
 								</tr> 
 								<tr>
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Coca Cola</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Cucumber sales</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
 								<tr>
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Coca Cola</a></td>
+									<td>Company 3</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Cucumber sales</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr><tr>
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Coca Cola</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Cucumber sales</a></td>
+									<td>Company 2</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr><tr>
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Coca Cola</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Cucumber sales</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr><tr>
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Coca Cola</a></td>
+									<td>Company 2</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
 								<tr >
 									<td><input type='checkbox'/></td>
 									<td><a data-toggle="modal" data-target="#myModal">Cucumber sales</a></td>
+									<td>Company 1</td>
 									<td>31.03.14</td>
 									<td></td>
 								</tr>
@@ -269,9 +292,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
 	<script>
 		$('#desc1').popover({trigger:'hover'});
-	
+	    $('.selectpicker').selectpicker();
 	</script>
 
 <!-- Modal -->
@@ -280,29 +304,25 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close modal-close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Client data</h4>
+        <h4 class="modal-title" id="myModalLabel">Project data</h4>
       </div>
       <div class="modal-body">
         <div class="panel panel-default">
 			  <!-- Default panel contents -->
 			  <div class="panel-heading">
-			  	<span><strong>Client name</strong></span>
-			  	<button class='btn btn-default pull-right btn-xs'><span class="glyphicon glyphicon-pencil"></span> Edit client</button>
+			  	<span><strong>Project name</strong></span>
+			  	<button class='btn btn-default pull-right btn-xs'><span class="glyphicon glyphicon-pencil"></span> Edit project</button>
 			  </div>
 			  <div class="panel-body">
-			    <p>Some description about this client.</p>
+			    <p>Some description about this project.</p>
 			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur, diam a commodo hendrerit, quam nibh luctus massa, et varius est ligula vitae nisl. Donec pretium leo at convallis bibendum. Curabitur et posuere tellus, ac lobortis turpis. Praesent at metus venenatis, lobortis est et, sagittis augue. Cras euismod elit eu venenatis vulputate. Integer hendrerit tristique sollicitudin. Praesent et ornare nulla. Morbi libero urna, condimentum tristique semper in, lacinia ac nulla. Proin vestibulum euismod accumsan. Donec imperdiet leo eu ligula venenatis, non porttitor lorem imperdiet. Cras quis est quis mauris eleifend scelerisque. Quisque gravida ultricies est, vel dignissim neque feugiat ac. Curabitur vel dui vitae metus malesuada hendrerit ut eget lacus.</p>
 			  </div>
 
 			  <!-- List group -->
 			  <ul class="list-group">
 			    <li class="list-group-item">
-			    	<button class='btn btn-success'>
-			    		<span class='glyphicon glyphicon-plus'></span> Create new</button>
-			    	<button class='btn btn-default'>
-			    		<span class='glyphicon glyphicon-folder-open'></span>&nbsp;&nbsp;Projects <span class="badge">14</span>
-			    	</button>
-			    	
+					<span> Client: </span>
+			    	<button class='btn btn-link'>Coca cola</button>
 			    </li>
 			    <li class="list-group-item">
 			    	<button class='btn btn-success'>
