@@ -31,11 +31,17 @@ ul
 }
 
 .records > tbody > tr:nth-child(even) {background: #fff}
-.records > tbody > tr:nth-child(odd) {background: #eee}
+.records > tbody > tr:nth-child(odd) {background: #fff}
 
 .records > tbody > tr:hover{
 	background-color: lightskyblue;
 	cursor:hand; cursor:pointer;
+}
+
+.records > tbody > tr.expand:hover
+{
+	background-color: transparent;
+	cursor: default;
 }
 
 
@@ -99,12 +105,38 @@ ul.services > li > div > .nav > li > a:hover
 	margin: 10px;
 }
 
+.card-mini
+{
+	width: 300px;
+	margin-left: auto ;
+  margin-right: auto ;
+	background: white;
+	padding: 10px;
+	border-top: 4px solid lightsteelblue;
+	margin-bottom: 10px;
+}
+
 .body > .content > .card
 {
 	background: white;
 	padding: 10px;
 	border-top: 4px solid lightsteelblue;
 	margin-bottom: 10px;
+}
+
+.body > .content > .card-notfixed
+{
+	width: auto;
+	background: white;
+	padding: 10px;
+	border-top: 4px solid lightsteelblue;
+	margin-bottom: 10px;
+}
+
+.body > .content >  .no-pad
+{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .body > .content >  .left-pad
@@ -143,7 +175,7 @@ input[type=checkbox]
 */
 tr.header
 {
-	background: #eef;	
+	background: #eef;
 }
 
 tr.header > .text
@@ -157,14 +189,16 @@ td:nth-child(1)
 {
 	width: 50px;
 }
+/*
+
 
 td:nth-child(1) > input[type=checkbox],
 th:nth-child(1) > input[type=checkbox],
 td:nth-child(1) > div
 {
-font-size:24px;
+	font-size:24px;
 	margin-left: 5px;
-}
+}*/
 
 .records > thead>tr>th
 {
@@ -173,7 +207,8 @@ font-size:24px;
 
 .records > tbody> tr.closed
 {
-	background: #ddd;
+	background: #f7f7f7;
+	color: #999;
 }
 
 .records > tbody> tr  > td:nth-child(2)
@@ -272,3 +307,18 @@ font-size:24px;
 .projects > tbody> tr  > td:nth-child(2){width: 40%;}
 
 .projects > tbody> tr  > td:nth-child(3){width: 30%;}
+
+.field
+{
+	margin-bottom: 5px;
+}
+
+.login{
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.select1{
+	width:300px;
+}

@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Expences tracking</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/select2.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/elements.css" rel="stylesheet">
 
@@ -39,7 +40,8 @@
 						<h4 class="media-heading">Ruslan Hadyniak</h4>
 						<button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cog"></span> Settings</button>
 					  </div>
-					</div>				</td>
+					</div>
+				</td>
 			    <td>  
 					
 				</td>
@@ -98,18 +100,7 @@
 					<div class='content'>
 						
 						<div class='card'>
-							<button type="button" class="btn btn-success">
-							  Approve  <span class="glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-danger">
-							  Remove  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-						</div>
-					
-						
-						<div class='card left-pad'>
-										
-						<form class="form-inline" role="form">
+							<form class="form-inline" role="form">
 								 <div class="form-group">
 									<button type="button" class="btn btn-default">
 									  Date  <span class="glyphicon glyphicon-chevron-up"></span>
@@ -118,32 +109,80 @@
 									 <div class="form-group">
 									<input type='text' class="form-control" placeholder="Search"/>
 									</div>
+									<div class="btn-group">
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-ok"></span> Selected <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" role="menu">
+										<li><a href="#">Approve</a></li>
+										<li><a href="#">Remove</a></li>	
+									  </ul>
+									</div>
+									<a href='#' class='btn btn-success pull-right'
+									data-toggle="collapse" data-target="#newrecord"
+									>
+									Add expences
+									</a>
 							</form>
-									
+						</div>
+						
+						<div id='newrecord' class='card collapse'>
+							<div class="panel panel-default">
+							  <!-- Default panel contents -->
+							  <div class="panel-heading">
+								
+							  </div>
+							  <div class="panel-body">
+								<textarea class='form-control' placeholder='Description'> Description goes here</textarea>
+							  </div>
+
+							  <!-- List group -->
+							  <ul class="list-group">
+								<li class="list-group-item inline">									
+									<select class='select2'>
+										<option>Client 1</option>
+										<option>Client 2</option>
+									</select>
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<select class='select2'>
+										<option>Project 1</option>
+										<option>Project 2</option>
+									</select>
+								</li>
+								<li class="list-group-item">
+									<div class='row'>
+									<div class='col-sm-2'>
+									<label>Money</label>
+									<input class='form-control field' value='123' />
+									<select class='select2 '>
+										<option>$ USD</option>
+										<option>Euro</option>
+									</select>
+									</div>
+									</div>
+								</li>
+							  </ul>
+							  <div class="panel-footer">
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-ok"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-trash"></button>
+								<button class='btn btn-primary pull-right ' >Done</button>
+								<button class='btn btn-link pull-right ' >Cancel</button>
+							  </div>
+							</div>
+						</div>
+						
+						
+						<div class='card no-pad'>
 						<table class='table table-condensed records'>
 							<thead>
 								<tr>
 									<th><input type='checkbox' disabled='true'/></th>
-									<th>Client</th>
-									<th>Project</th>
-									<th>Description</th>
+									<th><a>Client</a></th>
+									<th><a>Project</a></th>
+									<th><a>Description</a></th>
 								</tr>
 							<thead>
 							<tbody>
-								<tr>
-									<td><div><span class='glyphicon glyphicon-dashboard'></span></div></td>
-									<td><input type='text' class="form-control" placeholder="Client"/></td>
-									<td><input type='text' class="form-control" placeholder="Project"/></td>
-									<td>
-										<input type='text' class="form-control" placeholder="Description"/>
-									</td>
-										<!--<button class='btn btn-success'>Add</button>
-										<button class='btn '>Cancel</button>
-										<button type="button" class="btn btn-default">
-												  15.03.2014  <span class="glyphicon glyphicon-chevron-up"></span>
-												</button>
-										-->
-								</tr>
 								<tr class='header'>
 									<td><input type='checkbox'/></td>
 									<td colspan='3' class='text' >15.05.2014</td>
@@ -154,12 +193,81 @@
 									<td>tisda sdsme1</td>
 									<td>descsd asdsadasd asdwdawd </td>
 								</tr>
+								
+								<tr>
+									<td><input type='checkbox'/></td>
+									<td>prsdsdd1</td>
+									<td>tisda sdsme1</td>
+									<td><a data-toggle="collapse" data-target="#demotr1">descsd asdsadasd asdwdawd</a> </td>
+								</tr>
+								
+								<tr class='expand collapse' id='demotr1'>
+									<td colspan='4' >
+									<div class="panel panel-default">
+							 
+							  <div class="panel-body">
+								<p  placeholder='Description'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							  </div>
+
+							  <!-- List group -->
+							  <ul class="list-group">
+								<li class="list-group-item inline">									
+									<select class='select2 select2-disabled'>
+										<option>Client 1</option>
+										<option>Client 2</option>
+									</select>
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<select class='select2 select2-disabled'>
+										<option>Project 1</option>
+										<option>Project 2</option>
+									</select>
+								</li>
+								<li class="list-group-item">
+									<div class='row'>
+									<div class='col-sm-2'>
+									<label>Money</label>
+									<input class='form-control field' value='123' disabled />
+									<select class='select2 select2-disabled '>
+										<option> $ USD</option>
+										<option> Euro</option>
+										<option> Hryvnia</option>
+									</select>
+									</div>
+									</div>
+								</li>
+								<li class="list-group-item">
+								    <label>Approvals</label>
+									<br/>
+									<button class='btn btn-sm btn-success' disabled >Mariya Ivanovna</button>
+									<button class='btn btn-sm btn-success' disabled >Ivan Ivanov</button>
+									<div class='btn-group btn-group-sm '>
+										<button class='btn btn-info active ' disabled >Taras Petrovich</button>
+										<button class='btn btn-info' ><span class="glyphicon glyphicon-plus"></button>
+										<button class='btn btn-info' ><span class="glyphicon glyphicon-minus"></button>
+									</div>
+									<button class='btn btn-sm btn-default' disabled >Ivan Ivanov</button>
+									<button class='btn btn-sm btn-default' disabled >Mariya Ivanovna</button>
+								</li>
+							  </ul>
+							  <div class="panel-footer">
+							    <button class='btn btn-default' ><span class="glyphicon glyphicon-pencil"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-ok"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-trash"></button>
+								<button class='btn btn-primary pull-right ' >Done</button>
+								<button class='btn btn-link pull-right ' >Cancel</button>
+							  </div>
+							</div>
+							</td>
+								</tr>
+								
+								
 								<tr class='closed'>
 									<td><input type='checkbox'/></td>
 									<td>prsdda1</td>
 									<td>tisadasd me1</td>
 									<td>descsdas dsa asd asd as ds</td>
 								</tr>
+								
 								<tr class='header'>
 									<td><input type='checkbox'/></td>
 									<td colspan='3' class='text' >17.05.2014</td>
@@ -185,11 +293,14 @@
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/select2.js"></script>
 	<script>
 		$('#desc1').popover({trigger:'hover'});
+		$('.select2').select2();
+		$('.select2-disabled').select2("enable", false);
 	</script>
   </body>
 </html>

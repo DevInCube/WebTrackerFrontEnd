@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Time tracker</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/select2.css" rel="stylesheet">
+	<link href="css/select2-bootstrap.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/elements.css" rel="stylesheet">
 
@@ -45,6 +47,7 @@
 				</td>
 				<td>  
 				<div class="btn-group timers">
+					<button class='btn btn-default'><span class="glyphicon glyphicon-plus"></button>
 				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 					<span class="badge">5</span> Timers <span class="caret"></span>
 				  </button>
@@ -200,22 +203,9 @@
 				<div class='body'> 
 					<div class='header'>Time tracker service</div>
 					<div class='content'>
-						
-						<div class='card'>
-							<button type="button" class="btn btn-success">
-							  Approve  <span class="glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-default">
-							  Remove  <span class="glyphicon glyphicon-remove"></span>
-							</button>
-						</div>
 
-						
-					
-						
-						<div class='card left-pad'>
-										
-						<form class="form-inline" role="form">
+						<div class='card'>
+							<form class="form-inline" role="form">
 								 <div class="form-group">
 									<button type="button" class="btn btn-default">
 									  Date  <span class="glyphicon glyphicon-chevron-up"></span>
@@ -224,59 +214,78 @@
 									 <div class="form-group">
 									<input type='text' class="form-control" placeholder="Search"/>
 									</div>
+									<div class="btn-group">
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+										Selected <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" role="menu">
+										<li><a href="#">Approve</a></li>
+										<li><a href="#">Remove</a></li>
+									  </ul>
+									</div>
+									<a class='btn btn-success pull-right'
+									data-toggle="collapse" data-target="#new"
+									>
+									Add work</a>
 							</form>
-									
+						</div>
+						
+						
+						<div id='new'  class='card no-pad collapse'>
+						<form role='form'>
+							<div class="panel panel-default">
+							  <!-- Default panel contents -->
+							  <div class="panel-heading">
+							  </div>
+							  <div class="panel-body">
+								<textarea class='form-control' placeholder='Description'></textarea>
+							  </div>
+
+							  <!-- List group -->
+							  <ul class="list-group">
+								<li class="list-group-item inline">									
+									<select class='select2'>
+										<option>Client 1</option>
+										<option>Client 2</option>
+									</select>
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<select class='select2'>
+										<option>Project 1</option>
+										<option>Project 2</option>
+									</select>
+								</li>
+								<li class="list-group-item">
+									<select class='select2'>
+										<option>Chargable</option>
+										<option>Non-chargable</option>
+										<option>Personal matters</option>
+										<option>Target qualifying</option>
+									</select>
+								</li>
+							  </ul>
+							  <div class="panel-footer">
+								<button class='btn btn-primary' ><span class="glyphicon glyphicon-time"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-pencil"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-ok"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-trash"></button>
+								<button class='btn btn-primary pull-right ' >Done</button>
+								<button class='btn btn-link pull-right ' >Cancel</button>
+							  </div>
+							</div>
+						</form>
+						</div>
+					
+						<div class='card no-pad'>
 						<table class='table table-condensed records'>
 							<thead>
 								<tr>
 									<th><input type='checkbox' disabled='true'/></th>
-									<th>Client</th>
-									<th>Project</th>
-									<th>Description</th>
+									<th><a>Client</a></th>
+									<th><a>Project</a></th>
+									<th><a>Description</a></th>
 								</tr>
 							<thead>
 							<tbody>
-								<tr>
-
-									<td><div><span class='glyphicon glyphicon-dashboard'></span></div></td>
-									<td><input type='text' class="form-control" placeholder="Client"/></td>
-									<td><input type='text' class="form-control" placeholder="Project"/></td>
-									<td>
-										<input type='text' class="form-control" placeholder="Description"/>
-									</td>
-										<!--<button class='btn btn-success'>Add</button>
-										<button class='btn '>Cancel</button>
-										<button type="button" class="btn btn-default">
-												  15.03.2014  <span class="glyphicon glyphicon-chevron-up"></span>
-												</button>
-										-->
-										
-								</tr>
-									<td></td>
-									<td>
-										<input type='text' class="form-control" placeholder="00:00"/>
-									</td>
-									<td>
-										<div class="input-group">
-										  <input type="text" class="form-control"  placeholder="Time type">
-										  <div class="input-group-btn">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-											<ul class="dropdown-menu pull-right">
-											  <li><a href="#">Chargeable</a></li>
-											  <li><a href="#">Non-chargeable</a></li>
-											  <li><a href="#">Personal matters</a></li>
-											  <li><a href="#">Target qualifying</a></li>
-											</ul>
-										  </div><!-- /btn-group -->
-										</div><!-- /input-group -->
-									</td>
-									<td>
-										<button class="btn btn-primary"> Start timer</button>
-										<button class="btn btn-success"> Approve</button>
-										<button class="btn btn-link"> Cancel</button>
-									</td>
-									
-								<tr>
 								</tr>
 								<tr class='header'>
 									<td><input type='checkbox'/></td>
@@ -286,8 +295,60 @@
 									<td><input type='checkbox'/></td>
 									<td>prsdsdd1</td>
 									<td>tisda sdsme1</td>
-									<td>descsd asdsadasd asdwdawd </td>
+									<td>Coca Cola</td>
 								</tr>
+								
+								<tr id='demotr' class='expand collapse'>
+								<td colspan='4'>
+									<div class="panel panel-default">
+							  <div class="panel-body">
+								<p  placeholder='Description'> Description goes here</p>
+							  </div>
+
+							  <!-- List group -->
+							  <ul class="list-group">
+								<li class="list-group-item inline">									
+									<select class='select2 select2-disabled'>
+										<option>Client 1</option>
+										<option>Client 2</option>
+									</select>
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<select class='select2 select2-disabled'>
+										<option>Project 1</option>
+										<option>Project 2</option>
+									</select>
+								</li>
+								<li class="list-group-item">
+									<div class='row'>
+									<div class='col-sm-2'>
+									<select class='select2 select2-disabled field'>
+										<option>Chargable</option>
+										<option>Non-chargable</option>
+										<option>Personal matters</option>
+										<option>Target qualifying</option>
+									</select>
+									<input class='form-control' value='00:23' disabled />
+									</div>
+									</div>
+								</li>
+							  </ul>
+							  <div class="panel-footer">
+									<div class="btn-group">
+									  <button class='btn btn-default '><span class="glyphicon glyphicon-play"></span></button>
+										<button class='btn btn-default timer-time'>999:59:59</button>
+									</div>
+
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-ok"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-pencil"></button>
+								<button class='btn btn-default' ><span class="glyphicon glyphicon-trash"></button>
+								<button class='btn btn-primary pull-right ' >Done</button>
+								<button class='btn btn-link pull-right ' >Cancel</button>
+							  </div>
+							</div>
+						</div>	
+								</td>
+								</tr>
+								
 								<tr id="demotr" class="collapse">
 									<td></td>
 									<td><div>19:59:59</div></td>
@@ -324,13 +385,19 @@
 			</div>
 	</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/select2.js"></script>
 	<script>
 		$('#desc1').popover({trigger:'hover'});
-	
+		$('.select2').select2();
+		$('.select2-disabled').select2('enable',false);
 	</script>
+	
   </body>
 </html>
